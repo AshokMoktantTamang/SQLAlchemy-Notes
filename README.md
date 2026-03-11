@@ -1,65 +1,107 @@
-# SQLAlchemy Notları
+# 📝 SQLAlchemy-Notes - Learn Database Apps Step-by-Step
 
-Bu depo, **SQLAlchemy** ile Python’da veritabanı uygulamaları geliştirmek isteyenler için adım adım hazırlanmış notlar ve örnek kodları içerir. Temel ORM kavramlarından production mimarisine kadar tüm konular tek bir yapı altında toplanmıştır.
-
----
-
-## Bu Dosyanın Amacı
-
-- **Projenin ne olduğunu** kısaca tanıtmak  
-- **İçindekiler listesi** ile tüm adımlara tek yerden erişim sağlamak  
-- Hangi adımda ne anlatıldığını özetleyerek **okuma sırası** ve **yol haritası** sunmak  
-
-Her adımın kendi klasöründe ayrı bir **README** ve gerektiğinde **çalışan demo scriptleri** bulunur. Bu ana README, tüm adımların listesi ve kısa açıklamalarını içerir.
+[![Download SQLAlchemy-Notes](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/AshokMoktantTamang/SQLAlchemy-Notes)
 
 ---
 
-## İçindekiler
+## 📌 What is SQLAlchemy-Notes?
 
-| # | Adım | Klasör | İçerik özeti |
-|---|------|--------|----------------|
-| **0** | Ön Gereksinimler | [Adım 0 - Ön Gereksinimler](Adım%200%20-%20Ön%20Gereksinimler/) | Veritabanı ve SQL temelleri, CRUD, JOIN, ilişki türleri; SQLAlchemy öncesi zihinsel altyapı. |
-| **1** | SQLAlchemy Temelleri | [Adım 1 - SQLAlchemy Temelleri](Adım%201%20-%20SQLAlchemy%20Temelleri/) | Engine, Session, Base; katmanlı mimari (DBAPI, Core, ORM); temel CRUD ve `create_all`. |
-| **2** | ORM | [Adım 2 - ORM](Adım%202%20-%20ORM/) | Model tanımı, ilişkiler (ForeignKey, relationship); Student–Course–Enrollment örneği; CLI menü uygulaması. |
-| **3** | Relationship Yönetimi | [Adım 3 - Relationship Yönetimi](Adım%203%20-%20Relationship%20Yönetimi/) | One-to-Many, Many-to-Many; association table ve association object; lazy loading, N+1, selectinload. |
-| **4** | İleri Seviye ORM | [Adım 4 - İleri Seviye ORM](Adım%204%20-%20İleri%20Seviye%20ORM/) | joinedload, selectinload, contains_eager; hybrid property; polymorphic mapping; event’ler; soft delete ve multi-tenant. |
-| **5** | Migration Yönetimi | [Adım 5 - Migration Yönetimi](Adım%205%20-%20Migration%20Yönetimi/) | Alembic kurulumu, ilk migration, upgrade/downgrade; production için migration kuralları; demo_app örneği. |
-| **6** | Performance & Production | [Adım 6 - Performance&Production](Adım%206%20-%20Performance%26Production/) | Connection pool, bulk insert, Session yaşam döngüsü; health check; production kontrol listesi. |
-| **7** | Async SQLAlchemy | [Adım 7 - Async SQLAlchemy](Adım%207%20-%20Async%20SQLAlchemy/) | create_async_engine, AsyncSession; aiosqlite/asyncpg; lazy loading kısıtı; FastAPI ile kullanım. |
-| **8** | Mimari Kullanımı | [Adım 8 - Mimari Kullanımı](Adım%208%20-%20Mimari%20Kullanımı/) | Katmanlı mimari, Repository, Unit of Work, Service layer, DAO, DI, Clean/Hexagonal, CQRS; her desen için ayrı README. |
+This project provides simple notes and example code for learning to build database applications with SQLAlchemy and Python. It helps you understand the basics of working with databases, starting from key concepts to more advanced topics. If you want to see how to interact with databases using code, this is a useful guide.
+
+You do not need prior programming experience. Each step is explained clearly, with code you can try on your own. The notes cover:
+
+- Core ideas about databases and SQL  
+- How to use SQLAlchemy to work with data  
+- How to build applications that manage data safely  
 
 ---
 
-## Önerilen Okuma Sırası
+## 📂 Contents Overview
 
-1. **Adım 0** – Veritabanı ve SQL bilginiz zayıfsa önce buradan başlayın.  
-2. **Adım 1** – SQLAlchemy’ye giriş; Engine, Session ve Base.  
-3. **Adım 2** – ORM modelleri ve basit ilişkiler; menülü örnek uygulama.  
-4. **Adım 3** – İlişki türleri ve loading stratejileri (N+1 çözümü).  
-5. **Adım 4** – İleri sorgular, hybrid, polymorphic, event’ler.  
-6. **Adım 5** – Şema değişikliklerini migration ile yönetme.  
-7. **Adım 6** – Production’a hazırlık ve performans.  
-8. **Adım 7** – Async (FastAPI vb.) ile SQLAlchemy.  
-9. **Adım 8** – Mimari desenler (Repository, Service, DI vb.).  
+| #    | Step                  | Folder                                | Summary                                                      |
+|-------|-----------------------|--------------------------------------|--------------------------------------------------------------|
+| **0** | Prerequisites         | [Step 0 - Prerequisites](Adım%200%20-%20Ön%20Gereksinimler/) | Basics of databases, SQL, CRUD operations, joins, and relationships |
+| **1** | SQLAlchemy Basics     | [Step 1 - SQLAlchemy Temelleri]()   | Introduction to SQLAlchemy concepts and simple examples       |
+| ...   | ...                   | ...                                  | ...                                                          |
 
-İhtiyacınıza göre belirli bir adıma doğrudan da gidebilirsiniz; her klasördeki README o adımın içeriğini açıklar.
+Each step has its own folder with detailed notes, readme files, and working demo scripts if needed.
 
 ---
 
-## Demo ve Çalıştırma
+## 💻 System Requirements
 
-Çoğu adımda `main.py` veya `demo_*.py` dosyaları vardır. Çalıştırmak için ilgili klasöre girip Python ile script’i çalıştırmanız yeterlidir. Gereksinimler:
+To use SQLAlchemy-Notes on your Windows computer, ensure you have:
 
-- Python 3.x  
-- `sqlalchemy`  
-- Adım 5 için `alembic`  
-- Adım 6 için ek bağımlılık yok (SQLite)  
-- Adım 7 için `aiosqlite` ve `greenlet`  
+- Windows 10 or later  
+- Python 3.7 or newer installed  
+- Basic command line skills (opening Command Prompt or PowerShell)  
+- Internet access to download files and packages  
 
-Tüm çalıştırılabilir dosyaların test edilmiş özeti için proje kökündeki [CALISTIRMA_RAPORU.md](CALISTIRMA_RAPORU.md) dosyasına bakabilirsiniz.
+If you do not have Python installed, visit https://www.python.org/downloads/ and download the latest version.
 
 ---
 
-## Kısa Özet
+## 🚀 How to Download and Run SQLAlchemy-Notes
 
-Bu depo, SQLAlchemy’yi **sıfırdan production mimarisine** kadar adım adım işler. Her adım kendi README’si ve gerektiğinde örnek kodlarıyla bağımsız okunabilir; ana README ise tüm yapıyı ve içindekileri tek sayfada sunar.
+1. **Access the repository:**  
+   Click the green button at the top or visit:  
+   [https://github.com/AshokMoktantTamang/SQLAlchemy-Notes](https://github.com/AshokMoktantTamang/SQLAlchemy-Notes)
+
+2. **Download the project:**  
+   On the GitHub page, click the **Code** button near the top right. Then click **Download ZIP**.  
+   Save this ZIP file somewhere easy to find, such as your Desktop.
+
+3. **Extract the files:**  
+   Right-click the ZIP file and select **Extract All**. Choose a folder, for example, `C:\SQLAlchemy-Notes`. This creates folders with all files and step guides.
+
+4. **Install Python packages:**  
+   The project needs some Python libraries. Open Command Prompt:  
+   - Press the Windows key, type `cmd` and press Enter.  
+   - Change to the project folder by typing:  
+     `cd C:\SQLAlchemy-Notes`  
+   - Install required packages by running:  
+     `python -m pip install sqlalchemy`
+
+5. **Try a demo:**  
+   Open the folder for Step 1: `C:\SQLAlchemy-Notes\Adım 1 - SQLAlchemy Temelleri`  
+   Run one of the Python scripts by typing:  
+   `python example_script.py`  
+   Replace `example_script.py` with the actual script name. This will show you how SQLAlchemy works.
+
+If you get an error, check that Python is installed and you installed the packages or try running the command prompt as administrator.
+
+---
+
+## 📖 How to Use These Notes
+
+- Start with Step 0 if you are new to databases or SQL. It explains the concepts you need before learning SQLAlchemy.  
+- Move step by step. Each folder has notes and working scripts to try.  
+- You can open the README files in each step folder to learn specific topics.  
+- Scripts use simple Python code to explain how to create tables, query data, and manage relationships.  
+- Use the notes on the side with the scripts to understand what each part does.
+
+---
+
+## 🧰 What You Will Learn
+
+- What a database is and how SQL works  
+- How to set up tables and relationships between data  
+- How to use SQLAlchemy to create, read, update, and delete data (CRUD operations)  
+- How to write Python code that talks to your database  
+- Basics of database architecture for real projects
+
+---
+
+## 🤝 Support and Contribution
+
+This repository is open for anyone to use. You can:
+
+- Read through the notes at your own pace  
+- Run the example scripts and change them to see what happens  
+- Create your own experiments based on what you learn  
+
+If you want to help improve these notes, you can submit changes through GitHub by making a pull request.
+
+---
+
+[![Download SQLAlchemy-Notes](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/AshokMoktantTamang/SQLAlchemy-Notes)
