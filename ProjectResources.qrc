@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>Img/home.webp</file>
+        <file>Img/Splash.png</file>
+        <file>Img/aababa.png</file>
+    </qresource>
+</RCC>

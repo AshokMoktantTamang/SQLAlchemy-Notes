@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Register</class>
+ <widget class="QDialog" name="Register">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>566</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 21, 36);
+</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>10</y>
+     <width>361</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox {
+    border: 2px solid #8f8f91;
+    border-radius: 15px;
+    margin-top: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    padding: 5px;
+}</string>
+   </property>
+   <property name="title">
+    <string>Register</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Back to Login page</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Create your account</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Name</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_name">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Phone No.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_phno1">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Email</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_create_email">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Password</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_create_password">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton_register">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCheckBox" name="checkBox_terms">
+      <property name="text">
+       <string>I agree to Terms and Conditions</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4"/>
+  </widget>
+  <widget class="QLabel" name="label_sec_status">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>330</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255,0);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

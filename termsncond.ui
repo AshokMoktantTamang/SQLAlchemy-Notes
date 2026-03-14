@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>termsncond</class>
+ <widget class="QMainWindow" name="termsncond">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>423</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 21, 36);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>850</width>
+         <height>697</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Terms and Conditions&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Welcome to Student Resource Hub. By using our app, you agree to the following Terms and Conditions. Please read them carefully.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;1. Acceptance of Terms&lt;/p&gt;&lt;p&gt;By accessing or using Student Resource Hub, you agree to comply with and be bound by these Terms and Conditions. If you do not agree, you may not use the app.&lt;/p&gt;&lt;p&gt;2. Purpose of the App&lt;/p&gt;&lt;p&gt;Student Resource Hub is designed to provide study resources to students. The content, features, and services of the app are for educational purposes only.&lt;/p&gt;&lt;p&gt;3. User Conduct&lt;/p&gt;&lt;p&gt;You agree to use the app responsibly and only for lawful purposes.&lt;/p&gt;&lt;p&gt;Do not share, distribute, or upload any content that is harmful, illegal, or violates intellectual property rights.&lt;/p&gt;&lt;p&gt;Misuse of the app or its resources (e.g., hacking, unauthorized access) is prohibited.&lt;/p&gt;&lt;p&gt;4. Intellectual Property&lt;/p&gt;&lt;p&gt;All content, including study materials, graphics, and text, is the property of Student Resource Hub or its licensors.&lt;/p&gt;&lt;p&gt;5. Third-Party Links&lt;/p&gt;&lt;p&gt;Student Resource Hub may contain links to third-party websites. We are not responsible for the content or privacy practices of these sites. Use them at your own discretion.&lt;/p&gt;&lt;p&gt;6. Account Security&lt;/p&gt;&lt;p&gt;Users are responsible for maintaining the confidentiality of their login details and account. Any activity conducted under your account is your responsibility.&lt;/p&gt;&lt;p&gt;7. Limitation of Liability&lt;/p&gt;&lt;p&gt;Student Resource Hub is not liable for any errors, omissions, or inaccuracies in the content provided. Users are encouraged to verify the accuracy of resources independently.&lt;/p&gt;&lt;p&gt;8. Privacy Policy&lt;/p&gt;&lt;p&gt;Your use of the app is also governed by our Privacy Policy, which outlines how we collect, use, and protect your data.&lt;/p&gt;&lt;p&gt;9. Modifications to Terms&lt;/p&gt;&lt;p&gt;Student Resource Hub reserves the right to modify these Terms and Conditions at any time. Changes will be effective upon posting.&lt;/p&gt;&lt;p&gt;10. Termination of Use&lt;/p&gt;&lt;p&gt;We reserve the right to suspend or terminate your access to the app for violations of these terms without prior notice.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Return</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

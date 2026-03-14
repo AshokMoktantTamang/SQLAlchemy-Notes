@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>landingPage</class>
+ <widget class="QMainWindow" name="landingPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 21, 36);
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::TabPosition::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::TabShape::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::TextElideMode::ElideNone</enum>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Notes</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>This section has Handwritten Notes.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QListWidget" name="listWidget"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButton_upload_note">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Upload</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_download_notes">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Download</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Assignment</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>This section provides the assignments.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QListWidget" name="listWidget_2"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="pushButton_upload_assign">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Upload</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_download_assign">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Download</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Slides</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>This section has the Slides Provided by the teachers.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QListWidget" name="listWidget_slides"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="pushButton_upload_slides">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Upload</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_download_slides">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Download</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Past Question</string>
+       </attribute>
+       <attribute name="toolTip">
+        <string>This Section Consist of Past questions.</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QListWidget" name="listWidget_past"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="pushButton_upolad_past">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Upload</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_download_pastqn">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Download</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Others</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QListWidget" name="listWidget_others"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="pushButton_upload_other">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Upload</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_download_others">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    border: 2px solid #8f8f91;
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 10px; 
+    min-height: 10px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Download</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionProfile"/>
+   <addaction name="actionAbout_Us"/>
+   <addaction name="actionContact_Us"/>
+   <addaction name="actionSupport"/>
+   <addaction name="actionExit"/>
+   <addaction name="separator"/>
+   <addaction name="actionLogout"/>
+  </widget>
+  <action name="actionProfile">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::CameraWeb"/>
+   </property>
+   <property name="text">
+    <string>Profile</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout_Us">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DialogInformation"/>
+   </property>
+   <property name="text">
+    <string>About Us</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionContact_Us">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::Phone"/>
+   </property>
+   <property name="text">
+    <string>Contact Us</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::WindowClose"/>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionSupport">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentProperties"/>
+   </property>
+   <property name="text">
+    <string>Support</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SystemLogOut"/>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

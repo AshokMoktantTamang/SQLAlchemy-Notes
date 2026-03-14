@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>firstpage</class>
+ <widget class="QDialog" name="firstpage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 21, 36);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>270</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Sans Serif Collection</family>
+     <pointsize>10</pointsize>
+     <bold>false</bold>
+     <strikeout>false</strikeout>
+     <stylestrategy>PreferDefault</stylestrategy>
+    </font>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::FocusPolicy::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
